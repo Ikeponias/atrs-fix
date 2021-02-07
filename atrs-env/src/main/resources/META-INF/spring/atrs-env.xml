@@ -49,9 +49,4 @@
   <bean id="destinationResolver" class="org.springframework.jms.support.destination.DynamicDestinationResolver">
   </bean>
 
-  <bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">
-    <property name="targetConnectionFactory" ref="atrsJmsConnectionFactory" />
-    <property name="sessionCacheSize" value="1" />
-  </bean>
-
 </beans>
