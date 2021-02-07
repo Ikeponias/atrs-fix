@@ -61,9 +61,8 @@
                     <artifactId>activemq-broker</artifactId>
                 </dependency>
                 <dependency>
-                    <groupId>javax.jms</groupId>
-                    <artifactId>javax.jms-api</artifactId>
-                    <scope>runtime</scope>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-jms</artifactId>
                 </dependency>
             </dependencies>
         </profile>

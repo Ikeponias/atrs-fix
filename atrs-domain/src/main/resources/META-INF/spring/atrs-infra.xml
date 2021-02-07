@@ -24,7 +24,7 @@
   </bean>
 
   <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
-    <property name="connectionFactory" ref="cachingConnectionFactory" />
+    <property name="connectionFactory" ref="atrsJmsConnectionFactory" />
     <property name="receiveTimeout" value="20000" />
     <property name="destinationResolver" ref="destinationResolver" />
   </bean>

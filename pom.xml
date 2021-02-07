@@ -206,10 +206,6 @@
                           <groupId>org.apache.activemq</groupId>
                           <artifactId>activemq-openwire-legacy</artifactId>
                         </dependency>
-                        <dependency>
-                          <groupId>javax.jms</groupId>
-                          <artifactId>javax.jms-api</artifactId>
-                        </dependency>
                       </dependencies>
                     </container>
                   </configuration>
@@ -269,6 +265,21 @@
             </dependency>
             <!-- == End For JDK 11 == -->
 
+            <!-- == Begin For Jms == -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jms</artifactId>
+                <version>${spring-jms.version}</version>
+            </dependency>
+            <!-- == End For Jms == -->
+
+            <!-- == Begin For Jsp == -->
+            <dependency>
+                <groupId>org.apache.taglibs</groupId>
+                <artifactId>taglibs-standard-jstlel</artifactId>
+                <version>${taglibs-standard-jstlel.version}</version>
+            </dependency>
+            <!-- == End For Jsp == -->
         </dependencies>
     </dependencyManagement>
 
@@ -289,6 +300,8 @@
         <thymeleaf-joda-dialect.version>2.0.0</thymeleaf-joda-dialect.version>
         <jaxb-core.version>2.3.0.1</jaxb-core.version>
         <jaxb-impl.version>2.3.2</jaxb-impl.version>
+        <spring-jms.version>5.1.5.RELEASE</spring-jms.version>
+        <taglibs-standard-jstlel.version>1.2.5</taglibs-standard-jstlel.version>
         <!-- == Project Properties == -->
         <project.root.basedir>${project.basedir}</project.root.basedir>
         <encoding>UTF-8</encoding>

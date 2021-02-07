@@ -71,7 +71,6 @@
         <dependency>
             <groupId>org.apache.activemq</groupId>
             <artifactId>activemq-broker</artifactId>
-            <scope>provided</scope>
         </dependency>
         <!-- == End ActiveMQ == -->
 
@@ -82,6 +81,19 @@
         </dependency>
         <!-- == End Unit Test == -->
 
+        <!-- == Begin Postgresql == -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+        <!-- == End Postgresql == -->
+
+        <!-- == Begin Jsp(for Web) == -->
+        <dependency>
+            <groupId>org.apache.taglibs</groupId>
+            <artifactId>taglibs-standard-jstlel</artifactId>
+        </dependency>
+        <!-- == End Jsp(for Web) == -->
     </dependencies>
 
     <properties>
